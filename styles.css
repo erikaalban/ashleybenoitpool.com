@@ -580,11 +580,14 @@ body {
 }
 
 .year-section {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
 }
 
 .year-section:last-child {
   margin-bottom: 0;
+  border-bottom: none;
 }
 
 .year-heading {
@@ -592,14 +595,40 @@ body {
   font-size: 48px;
   font-weight: 700;
   color: #1a1a1a;
-  margin: 0 0 10px 80px;
+  margin: 0 0 30px 80px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.year-heading::-webkit-details-marker {
+  display: none;
+}
+
+.year-heading::before {
+  content: "▸";
+  font-size: 24px;
+  color: #999;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+details[open] > .year-heading::before {
+  transform: rotate(90deg);
 }
 
 .year-highlight {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   color: #666;
-  margin: 0 0 30px 80px;
   font-style: italic;
+  font-weight: 400;
+}
+
+.achievements-grid {
+  margin-top: 20px;
 }
 
 .achievements-grid {
@@ -1042,12 +1071,18 @@ body {
   }
 
   .year-heading {
-    font-size: 36px;
+    font-size: 32px;
     margin-left: 30px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .year-heading::before {
+    font-size: 18px;
   }
 
   .year-highlight {
-    margin-left: 30px;
+    font-size: 14px;
   }
 
   .gallery-grid-container {
