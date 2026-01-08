@@ -1044,4 +1044,50 @@ body {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
+
+  .sponsors-carousel-container {
+    padding: 40px 0;
+    min-height: auto;
+  }
+
+  .sponsor-group {
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    padding: 20px 0;
+  }
+
+  .sponsor-item {
+    min-width: auto;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .sponsor-item img {
+    max-width: 150px;
+    max-height: 80px;
+  }
+
+  .sponsor-nav-btn {
+    position: static;
+    transform: none;
+    flex-shrink: 0;
+  }
+
+  .sponsor-nav-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .sponsors-carousel-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 10px;
+  }
+
+  .sponsors-carousel {
+    flex: 1;
+    min-width: 0;
+  }
 }
