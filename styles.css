@@ -356,7 +356,7 @@ body {
 }
 
 .sponsors-content-wrapper {
-  padding: 0 80px;
+  padding: 0 120px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -379,6 +379,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
   min-height: 200px;
   display: flex;
+  overflow: visible;
   align-items: center;
   justify-content: center;
 }
@@ -432,11 +433,11 @@ body {
 }
 
 .sponsor-nav-prev {
-  left: 20px;
+  left: -60px;
 }
 
 .sponsor-nav-next {
-  right: 20px;
+  right: -60px;
 }
 
 .sponsor-nav-btn svg {
