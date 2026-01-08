@@ -541,6 +541,24 @@ body {
   font-weight: 500;
 }
 
+.fargo-note {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.fargo-note a {
+  color: #666;
+  text-decoration: none;
+}
+
+.fargo-note a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
 /* Titles Section */
 .titles-section {
   background: #fafafa;
