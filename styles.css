@@ -1185,3 +1185,229 @@ details[open] > .year-heading .year-highlight {
     grid-template-columns: 1fr;
   }
 }
+
+/* Large Screens (1600px+) */
+@media (min-width: 1600px) {
+  .main-content {
+    max-width: calc(1600px + 280px);
+  }
+
+  .section-header,
+  .about-grid,
+  .filter-tabs,
+  .achievements-grid,
+  .gallery-grid-container,
+  .contact-layout {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .hero-text-container {
+    padding: 100px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .hero-description {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 64px;
+  }
+
+  .about-text h3 {
+    font-size: 36px;
+  }
+
+  .stat-value {
+    font-size: 56px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+  }
+
+  .contact-info h3 {
+    font-size: 42px;
+  }
+}
+
+/* Extra Large Screens - Ultrawide & TVs (2200px+) */
+@media (min-width: 2200px) {
+  body {
+    background: #111;
+  }
+
+  .main-content {
+    max-width: 1920px;
+    margin-left: 280px;
+    margin-right: auto;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  }
+
+  .side-nav {
+    width: 320px;
+    padding: 80px 50px;
+  }
+
+  .main-content {
+    margin-left: 320px;
+    max-width: calc(1920px);
+  }
+
+  .nav-brand h1 {
+    font-size: 36px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 14px 0;
+  }
+
+  .social-icon-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .social-icon-link svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .section-header,
+  .about-grid,
+  .filter-tabs,
+  .achievements-grid,
+  .gallery-grid-container,
+  .contact-layout {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .hero-text-container {
+    padding: 120px;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-title {
+    font-size: 88px;
+  }
+
+  .hero-description {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 72px;
+  }
+
+  .about-text h3 {
+    font-size: 40px;
+  }
+
+  .bio-content p {
+    font-size: 18px;
+  }
+
+  .stat-card {
+    padding: 50px 40px;
+  }
+
+  .stat-value {
+    font-size: 64px;
+  }
+
+  .stat-label {
+    font-size: 16px;
+  }
+
+  .year-heading {
+    padding: 18px 120px;
+    font-size: 15px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 40px 120px 50px;
+  }
+
+  .achievement-card {
+    padding: 45px;
+  }
+
+  .achievement-title {
+    font-size: 24px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 35px;
+  }
+
+  .contact-info h3 {
+    font-size: 48px;
+  }
+
+  .contact-info p {
+    font-size: 20px;
+  }
+
+  .contact-form {
+    padding: 60px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 18px;
+    padding: 16px 20px;
+  }
+
+  .submit-btn {
+    font-size: 18px;
+    padding: 18px 36px;
+  }
+
+  .main-footer {
+    padding: 50px;
+    font-size: 16px;
+  }
+}
+
+/* Massive Screens - 4K TVs (2800px+) */
+@media (min-width: 2800px) {
+  .main-content {
+    max-width: 2200px;
+  }
+
+  .hero-title {
+    font-size: 96px;
+  }
+
+  .section-title {
+    font-size: 80px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
